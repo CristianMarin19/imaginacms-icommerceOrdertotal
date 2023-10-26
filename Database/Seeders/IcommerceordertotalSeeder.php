@@ -25,6 +25,7 @@ class IcommerceordertotalSeeder extends Seeder
             exit();
         }
 
+        $name = config('asgard.icommerceordertotal.config.shippingName');
         $shippingMethod =  app('Modules\Icommerceordertotal\Services\OrderTotalService')->getShippingMethod();
         
         //Validation if the module has been installed before
