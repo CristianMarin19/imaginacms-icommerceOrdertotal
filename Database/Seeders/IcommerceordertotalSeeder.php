@@ -47,7 +47,7 @@ class IcommerceordertotalSeeder extends Seeder
                 'en' => ['title' => trans($title,[],'en'),'description' => trans($description,[],'en')]
             );
 
-            $shippingMethodCreated = $shippingMethodRepository->create($params);
+            $shippingMethodCreated =  app('Modules\Icommerce\Repository\ShippingMethodRepository')->create($params);
 
         }
         
