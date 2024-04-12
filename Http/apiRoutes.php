@@ -2,7 +2,7 @@
 
 use Illuminate\Routing\Router;
 
-$router->group(['prefix' => 'icommerceordertotal'], function (Router $router) {
+Route::prefix('icommerceordertotal')->group(function (Router $router) {
     
     $router->get('/', [
         'as' => 'icommerceordertotal.api.ordertotal.init',
